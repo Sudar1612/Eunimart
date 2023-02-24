@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Tweet</title>
+</head>
+<body>
+    <center>
+        <h2>Delete Tweet</h2>
+        <hr>
+    <form action="{{ url_for('delete_tweet') }}" method="POST">
+        <h3>User ID</h3>
+        <input type="text" name="id">
+        <br>
+        <br>
+        <h3>Tweet to be deleted</h3>
+        <input type="text" name="tweet">
+        <br>
+        <br>
+        <input type="submit" name="delete" value="delete">
+    </form>
+    </center>
+</body>
+</html>

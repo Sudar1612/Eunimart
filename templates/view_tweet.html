@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <body>
+   <center>
+      <h2>View Tweet</h2>
+      <hr>
+      <table border = 1>
+         <thead>
+            <td>User ID</td>
+            <td>Tweet</td>
+            <td>Date</td>
+            
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["tweet"]}}</td>
+               <td> {{ row["date"]}}</td>
+               
+            </tr>
+         {% endfor %}
+      </table>
+      <br>
+      <br>
+      <h3><a href = "/log_result">Back</a></h3>
+    </center>
+   </body>
+</html>
